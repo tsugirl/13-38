@@ -1,0 +1,59 @@
+.section {
+    padding: 78px 0;
+}
+.about__title {
+    @include fira(medium);
+    font-size: 42px;
+    text-align:center;
+    color: $black;
+}
+.about__desc {
+    font-size: 21px;
+    @include fira(light);
+    color: $grey;
+    text-align:center;
+    margin-bottom: 45px;
+}
+.experience {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    
+}
+.experience__left, .experience__right {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience__img {
+    width: 30%;
+}
+.experience__info {
+    
+    width: 65%;
+    
+}
+
+.exp__icon {
+    
+    max-width: 100%;
+}
+.about__smth {
+    font-size: 21px;
+    color: $black;
+    @include fira(regular);
+    margin-bottom: 18px;
+}
+.about__info {
+@include fira(light);
+    font-size: 14px;
+    color: $grey;
+    a {
+        color: $blue;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+}

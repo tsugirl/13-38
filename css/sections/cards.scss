@@ -1,0 +1,142 @@
+.container {
+    width: 1200px;
+    margin: auto;
+}
+        
+.cards__pic {
+    width: 100%;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: pink;
+}
+        
+.cards__pic:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    bottom: -20px;
+}
+        
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+        
+.cards__item {
+    width: calc(100%/3 - 20px);
+    margin-bottom: 20px;
+}
+        
+.cards__item:hover .cards__pic:after {
+    bottom: 0px;
+    transition: 0.7s;
+}
+        
+        
+.ch1{
+    position: absolute;
+    left: -9999px;
+}
+        
+.lab1{
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: help;
+}
+        
+.lab1:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+}
+        
+.lab1:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    top: 3px;
+    left: 3px;
+    border-left: 4px solid green;
+    border-bottom: 4px solid green;
+    transform: rotate(-45deg);
+}
+        
+.ch1:not(:checked) + .lab1:after{
+        opacity: 0;
+}
+
+.cards__title {
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-bottom: 40px;
+}
+
+.p1 {
+    background-image: url(../../img/cards/Layer%203.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p2 {
+    background-image: url(../../img/cards/Layer%204.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p3 {
+    background-image: url(../../img/cards/Layer%205.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p4 {
+    background-image: url(../../img/cards/Layer%209.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p5 {
+    background-image: url(../../img/cards/Layer%208.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p6 {
+    background-image: url(../../img/cards/Layer%207.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.time {
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.check {
+    background-color: #f6f7f2;
+    padding: 20px;
+}
+
+.cards_item {
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
